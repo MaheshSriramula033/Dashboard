@@ -1,0 +1,113 @@
+/* Navbar styling */
+.custom-navbar {
+  height: 80px;
+  background-color: #1A1F36; /* Navy/Dark Blue */
+  display: flex;
+  align-items: center;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.custom-navbar .container-fluid {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-toggler {
+  color: white !important;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0;
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffc107 !important; /* Yellow on hover */
+}
+
+/* Sidebar (offcanvas menu) */
+.offcanvas {
+  height: 100vh !important;
+  background-color: #f8f9fa;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  color: #212529;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #e2e6ea;
+}
+
+/* Sticky internship banner */
+#stickyBanner {
+  position: fixed;
+  top: 80px; /* below navbar */
+  left: 0;
+  background-color: #ffc107;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  z-index: 1031;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+#stickyBanner a {
+  font-weight: bold;
+  color: #212529;
+  text-decoration: none;
+}
+
+#stickyBanner a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  #stickyBanner {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+/* Ensures the hamburger icon is clearly visible (white) */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.card {
+  min-height: 200px;
+}
+.card-body img {
+  max-height: 80px;
+}
